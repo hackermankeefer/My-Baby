@@ -1,0 +1,86 @@
+/* styles.css – Mobile‑first, warm romantic palette */
+
+/* ---- Base ---- */
+:root {
+  --bg: #FFF8F0;           /* cream */
+  --accent: #FFB6C1;       /* blush */
+  --primary: #5D3A6B;     /* berry/plum */
+  --text: #222222;        /* dark for contrast */
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1e1e;
+    --text: #e0e0e0;
+    --card-bg: #2a2a2a;
+    --card-shadow: rgba(0,0,0,0.5);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+body { padding: 1rem; }
+
+/* ---- Layout ---- */
+.site-header { margin-bottom: 2rem; }
+.nav ul { display: flex; gap: 1rem; list-style: none; }
+.nav a { text-decoration: none; color: var(--primary); font-weight: 600; }
+
+.hero { text-align: center; padding: 3rem 1rem; }
+.hero h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); color: var(--primary); margin-bottom: .5rem; }
+.hero p { font-size: clamp(1rem, 4vw, 1.2rem); margin-bottom: 1.5rem; }
+ ta { background: var(--primary); color: #fff; border: none; padding: .75rem 1.5rem; border-radius: .5rem; font-size: 1rem; cursor: pointer; }
+.cta:hover, .cta:focus { background: #4a224f; }
+
+section { margin: 3rem 0; }
+section h2 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--primary); }
+
+.meet-cute .callout { background: var(--accent); padding: .75rem; border-left: .5rem solid var(--primary); margin-top: .5rem; }
+
+.timeline ul { list-style: none; padding-left: 0; }
+.timeline li { margin-bottom: .75rem; }
+.timeline li strong { color: var(--primary); }
+
+.favorites .cards { display: grid; gap: 1rem; }
+@media (min-width: 600px) {
+  .favorites .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .favorites .cards { grid-template-columns: repeat(3, 1fr); }
+}
+.card { background: var(--card-bg); padding: 1rem; border-radius: .75rem; box-shadow: 0 2px 6px var(--card-shadow); }
+.card h3 { margin-bottom: .5rem; color: var(--primary); }
+
+.spotify-card { text-align: center; padding: 1rem; }
+.spotify-card .placeholder { margin: 1rem auto; width: 200px; height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; }
+.caption { font-style: italic; color: var(--primary); }
+
+.closing { text-align: center; padding: 2rem 1rem; }
+.signoff { margin-top: .5rem; font-weight: 600; }
+
+.site-footer { text-align: center; font-size: .9rem; margin-top: 3rem; }
+
+/* ---- Interactivity ---- */
+section { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+section.visible { opacity: 1; transform: translateY(0); }
+
+/* ---- Accessibility ---- */
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

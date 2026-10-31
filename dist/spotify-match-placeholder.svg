@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" role="img" aria-labelledby="title desc">
+  <title id="title">Spotify match screenshot placeholder</title>
+  <desc id="desc">A soft blush music waveform placeholder to replace with the real Spotify match screenshot.</desc>
+  <rect width="640" height="500" rx="28" fill="#f4dfdd"/>
+  <circle cx="320" cy="235" r="150" fill="#f8ede7"/>
+  <ellipse cx="320" cy="235" rx="200" ry="95" fill="none" stroke="#bb7185" stroke-width="2" transform="rotate(-25 320 235)"/>
+  <ellipse cx="320" cy="235" rx="182" ry="90" fill="none" stroke="#8a4a65" stroke-width="2" transform="rotate(25 320 235)"/>
+  <g fill="#a34d68">
+    <rect x="177" y="217" width="8" height="36" rx="4"/><rect x="197" y="197" width="8" height="76" rx="4"/><rect x="217" y="177" width="8" height="116" rx="4"/><rect x="237" y="205" width="8" height="60" rx="4"/><rect x="257" y="168" width="8" height="134" rx="4"/><rect x="277" y="190" width="8" height="90" rx="4"/><rect x="297" y="158" width="8" height="154" rx="4"/><rect x="317" y="180" width="8" height="110" rx="4"/><rect x="337" y="202" width="8" height="66" rx="4"/><rect x="357" y="170" width="8" height="130" rx="4"/><rect x="377" y="190" width="8" height="90" rx="4"/><rect x="397" y="208" width="8" height="54" rx="4"/><rect x="417" y="184" width="8" height="104" rx="4"/><rect x="437" y="214" width="8" height="44" rx="4"/>
+  </g>
+  <text x="320" y="436" fill="#713b55" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="600" text-anchor="middle">Spotify match screenshot goes here</text>
+</svg>
